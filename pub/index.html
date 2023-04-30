@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- -------------------------------- links -------------------------------- -->
+		<link rel="stylesheet" href="/pub/output.css" />
+		<script defer src="/pub/script.js"></script>
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<link
+			href="https://api.fontshare.com/v2/css?f[]=pally@400,700,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	</head>
+	<body class="bg-[#e0e0e0] selection:bg-[#ffd85e] selection:text-[#151515] sm:overflow-x-hidden">
+		<!-- ------------------------------ preloader ------------------------------ -->
+		<div class="container" id="preloader">
+			<div class="loader"></div>
+			<div class="loader"></div>
+			<div class="loader"></div>
+		</div>
+		<header>
+			<!-- ------------------------------- navbar -------------------------------- -->
+			<nav
+				class="navi flex justify-between py-2 px-[8em] sm:px-[.7em] sm:py-[.3em] md:px-[1em] bg-[#30315f] sm:bg-[#30315f] duration-200 ease-linear items-center fixed w-full z-50 border-b border-[#fefdfc] sm:fixed sm:top-0"
+			>
+				<div
+					class="flex justify-between items-center w-[inherit]"
+				>
+					<div class="text-yellow-50 font-bold text-[2.3rem]">
+						<h2>Josh<span class="text-red-600">.</span></h2>
+					</div>
+					<div class="hamburger cursor-pointer hidden sm:block">
+						<span class="bars"></span>
+						<span class="bars"></span>
+						<span class="bars"></span>
+					</div>
+				</div>
+				<ul
+					class="menu flex gap-8 text-yellow-50 sm:absolute sm:flex-col sm:top-[4.1em] sm:py-[2em] sm:bg-[#30315f] sm:w-[70%] sm:h-[100vh] sm:right-[-100%] sm:text-end "
+				>
+					<li class="hover:text-[#ffd85e] sm:p-4 sm:hover:bg-[#ffd85e] sm:hover:text-[#151515]">
+						<a class="links text-[1rem] font-bold" href="">Home</a>
+					</li>
+					<li class="hover:text-[#ffd85e] sm:p-4 sm:hover:bg-[#ffd85e] sm:hover:text-[#151515]">
+						<a class="links text-[1rem] font-bold" href="#aboutus">About</a>
+					</li>
+					<li class="hover:text-[#ffd85e] sm:p-4 sm:hover:bg-[#ffd85e] sm:hover:text-[#151515]">
+						<a class="links text-[1rem] font-bold" href="#serve">Services</a>
+					</li>
+					<li class="hover:text-[#ffd85e] sm:p-4 sm:hover:bg-[#ffd85e] sm:hover:text-[#151515]">
+						<a class="links text-[1rem] font-bold" href="#experience">Experience</a>
+					</li>
+					<li class="hover:text-[#ffd85e] sm:p-4 sm:hover:bg-[#ffd85e] sm:hover:text-[#151515]">
+						<a class="links text-[1rem] font-bold" href="#work">Work</a>
+					</li>
+					<li class="hover:text-[#ffd85e] sm:p-4 sm:hover:bg-[#ffd85e] sm:hover:text-[#151515]">
+						<a class="links text-[1rem] font-bold" href="">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- end of navbar -->
+			<!-- ----------------------------- banner-sec ------------------------------ -->
+			<section
+				id="home"
+				class="py-[10.7em] flex justify-center items-center text-center bg-banner bg-no-repeat bg-cover"
+			>
+				<div class="grid place-items-center text-[#f6f6f7]">
+					<div class="w-[100px] h-[100px] bg-black mb-3 rounded-full">
+						<img src="" alt="" />
+					</div>
+					<div class="mb-4">
+						<h1 class="font-bold text-[2.5rem]">
+							Ebuka <span class="text-red-600">Josh</span>
+						</h1>
+						<p class="font-normal text-[16px]">I'm a Frontend developer</p>
+					</div>
+					<div class="flex gap-4 mb-4">
+						<div>
+							<a
+								class="text-[25px] text-cyan-50 hover:text-[#ffd85e] duration-200"
+								href=""
+								><ion-icon name="logo-instagram"></ion-icon
+							></a>
+						</div>
+						<div>
+							<a class="text-[25px] hover:text-[#ffd85e] duration-200" href=""
+								><ion-icon name="logo-twitter"></ion-icon
+							></a>
+						</div>
+						<div>
+							<a class="text-[25px] hover:text-[#ffd85e] duration-200" href=""
+								><ion-icon name="logo-linkedin"></ion-icon
+							></a>
+						</div>
+						<div>
+							<a class="text-[25px] hover:text-[#ffd85e] duration-200" href=""
+								><ion-icon name="logo-pinterest"></ion-icon
+							></a>
+						</div>
+						<div>
+							<a class="text-[25px] hover:text-[#ffd85e] duration-200" href=""
+								><ion-icon name="logo-facebook"></ion-icon
+							></a>
+						</div>
+						<div>
+							<a class="text-[25px] hover:text-[#ffd85e] duration-200" href=""
+								><ion-icon name="logo-github"></ion-icon
+							></a>
+						</div>
+					</div>
+					<div>
+						<button
+							class="font-semibold text-[16px] bg-[#ff4c5f] hover:text-[#151515] hover:bg-[#ffd85e] py-[13px] px-[30px] rounded-full duration-500 ease-linear"
+						>
+							Hire me
+						</button>
+					</div>
+				</div>
+			</section>
+		</header>
+		<main>
+			<!-- -------------------------------- about -------------------------------- -->
+			<section class="py-[7.1875em] sm:py-[4.1875em] md:py-[5.1875em] mx-[8em] sm:m-3 md:mx-4" id="aboutus">
+				<section class="sm:text-center">
+					<h2 class="font-bold text-[2rem] text-[#151515] mb-[1.3em]">
+						About Me
+					</h2>
+					<div class="flex sm:flex-col md:flex-col gap-[3em] sm:gap-[1.3em]">
+						<div class="grid place-items-center" data-aos="zoom-in">
+							<div class="w-[100px] h-[100px] bg-black rounded-full block">
+								<img src="" alt="" />
+							</div>
+							<div class="text-center">
+								<h2>
+									<span class="text-red-600 font-bold text-[30px]">Joshua</span>
+								</h2>
+								<p class="font-semibold">Frontend Developer</p>
+							</div>
+						</div>
+						<div
+							class="skills flex sm:flex-col md:flex-col p-[2.5em] sm:p-[1.5em] md:p-[1em] w-[80%] md:w-full sm:w-full rounded-md relative"
+							data-aos="fade-left"
+						>
+							<article class="pr-2 sm:pr-0 sm:mb-4">
+								<p class="font-medium text-[13px] mb-4">
+									I am passionate about creating innovative solutions to complex
+									problems. I have honed my analytical thinking and
+									collaboration skills, and I thrive in a team environment. My
+									expertise includes proficiency in multiple programming
+									languages, as well as experience with software development
+									meth odologies such as Agile and Scrum. I am excited to
+									continue growing as a developer and contributing to the
+									ever-evolving world of technology.
+								</p>
+								<button
+									class="font-semibold text-[16px] text-fuchsia-50 bg-[#ff4c5f] hover:text-[#151515] hover:bg-[#ffd85e] py-2 px-[30px] rounded-full duration-500 ease-linear"
+								>
+									Download CV
+								</button>
+							</article>
+							<section class="context">
+								<div class="html-cont h-[50px] w-[400px] sm:w-[300px] md:w-[700px]">
+									<div class="flex justify-between items-center mb-1">
+										<h4 class="text-[14px] font-bold">CSS</h4>
+										<p class="text-[12px] font-semibold">95%</p>
+									</div>
+									<div class="prog-bar h-[8px] w-[400px] sm:w-[300px] md:w-[700px] rounded-full relative">
+										<div
+											class="prog-loader absolute left-0 bg-[#0ea5e9] h-[8px] w-[95%] rounded-full"
+										></div>
+									</div>
+								</div>
+								<div class="html-cont h-[50px] w-[400px] sm:w-[300px] md:w-[700px]">
+									<div class="flex justify-between mb-1 items-center">
+										<h4 class="text-[14px] font-bold">TAILWIND</h4>
+										<p class="text-[12px] font-semibold">89%</p>
+									</div>
+									<div class="prog-bar h-[8px] w-[400px] sm:w-[300px] md:w-[700px] rounded-full relative">
+										<div
+											class="prog-loader absolute left-0 bg-[#38bdf8] h-[8px] w-[89%] rounded-full"
+										></div>
+									</div>
+								</div>
+								<div class="html-cont h-[50px] w-[400px] sm:w-[300px] md:w-[700px]">
+									<div class="flex justify-between mb-1 items-center">
+										<h4 class="text-[14px] font-bold">JAVASCRIPT</h4>
+										<p class="text-[12px] font-semibold">76%</p>
+									</div>
+									<div class="prog-bar h-[8px] w-[400px] sm:w-[300px] md:w-[700px] rounded-full relative">
+										<div
+											class="prog-loader absolute left-0 bg-[#fecb4b] h-[8px] w-[76%] rounded-full"
+										></div>
+									</div>
+								</div>
+								<div class="html-cont h-[50px] w-[400px] sm:w-[300px] md:w-[700px]">
+									<div class="flex justify-between mb-1 items-center">
+										<h4 class="text-[14px] font-bold">REACT</h4>
+										<p class="text-[12px] font-semibold">70%</p>
+									</div>
+									<div class="prog-bar h-[8px] w-[400px] sm:w-[300px] md:w-[700px] rounded-full relative">
+										<div
+											class="prog-loader absolute left-0 bg-[#5958e2] h-[8px] w-[70%] rounded-full"
+										></div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+			</section>
+			<!-- ------------------------------ services ------------------------------- -->
+			<section class="py-[6.1875em] sm:py-[4.1875px] mx-[8em] sm:m-3 md:m-3 sm:text-center" id="serve">
+				<h2 class="font-bold text-[2rem] text-[#151515] mb-[1.3em]">
+					Services
+				</h2>
+				<section class="flex sm:flex-col items-center justify-center gap-6">
+					<div
+						class="serve bg-[#6c6ce6] p-[1.5em] rounded-lg grid place-items-center"
+						data-aos="fade-right"
+					>
+						<img src="/imgs/zkMN9b4Q6M.gif" alt="" />
+						<h4 class="text-[1.5rem] font-bold">Code Managment</h4>
+						<p class="text-center text-fuchsia-50">
+							Code management is the process of organizing, maintaining, and
+							controlling the source code of a software project. It involves
+							using tools and techniques to manage the codebase, such as version
+							control systems, code review processes, and automated testing.
+						</p>
+					</div>
+					<div
+						class="serve bg-[#f8d74c] p-[1.5em] rounded-lg grid place-items-center"
+						data-aos="zoom-in"
+					>
+						<img src="/imgs/x2iwKQ0TfB.gif" alt="" />
+						<h4 class="text-[1.5rem] font-bold">Web Development</h4>
+						<p class="text-center text-fuchsia-50">
+							Web development is the process of building, programming, and
+							maintaining websites and web applications. It involves creating
+							and maintaining a collection of web pages that are publicly
+							accessible on the internet.
+						</p>
+					</div>
+					<div
+						class="serve bg-[#ff4c61] p-[1.5em] rounded-lg grid place-items-center"
+						data-aos="fade-left"
+					>
+						<img src="/imgs/UkXSkODbC3.gif" alt="" />
+						<h4 class="text-[1.5rem] font-bold">Responsive Design</h4>
+						<p class="text-center text-fuchsia-50">
+							Responsive design is an approach to web design that makes web
+							content adapt to different screen and window sizes of a variety of
+							devices. It uses code that automatically adjusts the design to
+							different screens based on their sizes and resolutions.
+						</p>
+					</div>
+				</section>
+				<div class="text-center mt-[2.5em]">
+					<a href="#"
+						>Looking for a custom job?
+						<span class="text-red-600 text-[16px] font-semibold"
+							>Click Here</span
+						>
+						to contact me! 👌
+					</a>
+				</div>
+			</section>
+			<!-- ----------------------------- experience ------------------------------ -->
+			<section class="py-[7.1875em] sm:py-[4.1875em] mx-[8em] sm:m-3 md:m-3" id="experience">
+				<h2 class="font-bold text-[2rem] text-[#151515] mb-[1.3em] sm:text-center">
+					Experience
+				</h2>
+				<section class="flex sm:flex-col">
+					<div class="time-line relative">
+						<div class="contain py-[10px] px-[50px] relative w-[100%]">
+							<ion-icon
+								class="text-[25px] text-[#fd7287] absolute right-[20px] top-[20px] z-[15px]"
+								name="school-outline"
+							></ion-icon>
+							<div class="textbox py-[20px] px-[30px] bg-slate-300 rounded-lg">
+								<h5 class="font-semibold text-[16px] capitalize">apple</h5>
+								<small class="mb-[15px]">2018 - 2022</small>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+									eligendi molestiae, id voluptas minima possimus iste quas
+									tempora. Ratione, porro.
+								</p>
+							</div>
+						</div>
+						<div class="contain py-[10px] px-[50px] relative w-[100%]">
+							<ion-icon
+								class="text-[25px] text-[#fd7287] absolute right-[20px] top-[20px] z-[15px]"
+								name="briefcase-outline"
+							></ion-icon>
+							<div class="textbox py-[20px] px-[30px] bg-slate-300 rounded-lg">
+								<h5 class="font-semibold text-[16px] capitalize">apple</h5>
+								<small class="mb-[15px]">2018 - 2022</small>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+									eligendi molestiae, id voluptas minima possimus iste quas
+									tempora. Ratione, porro.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="time-line relative">
+						<div class="contain py-[10px] px-[50px] relative w-[100%]">
+							<ion-icon
+								class="text-[25px] text-[#fd7287] absolute right-[20px] top-[20px] z-[15px]"
+								name="briefcase-outline"
+							></ion-icon>
+							<div class="textbox py-[20px] px-[30px] bg-slate-300 rounded-lg">
+								<h5 class="font-semibold text-[16px] capitalize">apple</h5>
+								<small class="mb-[15px]">2018 - 2022</small>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+									eligendi molestiae, id voluptas minima possimus iste quas
+									tempora. Ratione, porro.
+								</p>
+							</div>
+						</div>
+						<div class="contain py-[10px] px-[50px] relative w-[100%]">
+							<ion-icon
+								class="text-[25px] text-[#fd7287] absolute right-[20px] top-[20px] z-[15px]"
+								name="briefcase-outline"
+							></ion-icon>
+							<div class="textbox py-[20px] px-[30px] bg-slate-300 rounded-lg">
+								<h5 class="font-semibold text-[16px] capitalize">apple</h5>
+								<small class="mb-[15px]">2018 - 2022</small>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+									eligendi molestiae, id voluptas minima possimus iste quas
+									tempora. Ratione, porro.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<!-- ----------------------------- recentwork ------------------------------ -->
+			<section class="py-[4em] mx-[8em] sm:m-3 md:m-3" id="work">
+				<h2 class="font-bold text-[2rem] text-[#151515] mb-[1.3em] sm:text-center">
+					Recent Work
+				</h2>
+				<section
+					class="flex sm:flex-col justify-center items-center gap-4 mb-4"
+					data-aos="fade-left"
+				>
+					<div
+						class="card p-[10px] w-[300px] h-[200px] relative cursor-pointer overflow-hidden rounded-xl"
+					>
+						<img
+							class="card-img absolute left-0 top-0 duration-[2000ms] w-full h-full object-cover"
+							src="https://img.freepik.com/premium-vector/male-cute-cartoon-profile-character_539226-20.jpg?w=360"
+							alt=""
+						/>
+						<ion-icon
+							class="card-fav absolute duration-[1s] right-[-100%] top-[1rem] text-[1.8rem] text-[#f1f1f1] cursor-pointer hover:text-red-600"
+							name="heart-outline"
+						></ion-icon>
+						<div
+							class="card-content absolute text-white left-0 -bottom-full px-[1rem] backdrop-blur duration-[0.5s] ease-[cubic-bezier(0.075, 0.82, 0.165, 1)]"
+						>
+							<h3 class="font-semibold text-[25px] text-white">Health Care</h3>
+							<div class="text-yellow-300 text-[14px]">
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-half-sharp"></ion-icon>
+							</div>
+							<p class="font-extralight text-[14px] text-[#ddd] mt-[7px]"></p>
+						</div>
+					</div>
+					<div
+						class="card p-[10px] w-[300px] h-[200px] relative cursor-pointer overflow-hidden rounded-xl"
+					>
+						<img
+							class="card-img absolute left-0 top-0 duration-[2000ms] w-full h-full object-cover"
+							src="https://img.freepik.com/premium-vector/male-cute-cartoon-profile-character_539226-20.jpg?w=360"
+							alt=""
+						/>
+						<ion-icon
+							class="card-fav absolute duration-[1s] right-[-100%] top-[1rem] text-[1.8rem] text-[#f1f1f1] cursor-pointer hover:text-red-600"
+							name="heart-outline"
+						></ion-icon>
+						<div
+							class="card-content absolute text-white left-0 -bottom-full px-[1rem] backdrop-blur duration-[0.5s] ease-[cubic-bezier(0.075, 0.82, 0.165, 1)]"
+						>
+							<h3 class="font-semibold text-[25px] text-white">Health Care</h3>
+							<div class="text-yellow-300 text-[14px]">
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-half-sharp"></ion-icon>
+							</div>
+							<p class="font-extralight text-[14px] text-[#ddd] mt-[7px]"></p>
+						</div>
+					</div>
+					<div
+						class="card p-[10px] w-[300px] h-[200px] relative cursor-pointer overflow-hidden rounded-xl"
+					>
+						<img
+							class="card-img absolute left-0 top-0 duration-[2000ms] w-full h-full object-cover"
+							src="https://img.freepik.com/premium-vector/male-cute-cartoon-profile-character_539226-20.jpg?w=360"
+							alt=""
+						/>
+						<ion-icon
+							class="card-fav absolute duration-[1s] right-[-100%] top-[1rem] text-[1.8rem] text-[#f1f1f1] cursor-pointer hover:text-red-600"
+							name="heart-outline"
+						></ion-icon>
+						<div
+							class="card-content absolute text-white left-0 -bottom-full px-[1rem] backdrop-blur duration-[0.5s] ease-[cubic-bezier(0.075, 0.82, 0.165, 1)]"
+						>
+							<h3 class="font-semibold text-[25px] text-white">Health Care</h3>
+							<div class="text-yellow-300 text-[14px]">
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-half-sharp"></ion-icon>
+							</div>
+							<p class="font-extralight text-[14px] text-[#ddd] mt-[7px]"></p>
+						</div>
+					</div>
+				</section>
+				<section
+					class="flex sm:flex-col justify-center items-center gap-4"
+					data-aos="fade-right"
+				>
+					<div
+						class="card p-[10px] w-[300px] h-[200px] relative cursor-pointer overflow-hidden rounded-xl"
+					>
+						<img
+							class="card-img absolute left-0 top-0 duration-[2000ms] w-full h-full object-cover"
+							src="https://img.freepik.com/premium-vector/male-cute-cartoon-profile-character_539226-20.jpg?w=360"
+							alt=""
+						/>
+						<ion-icon
+							class="card-fav absolute duration-[1s] right-[-100%] top-[1rem] text-[1.8rem] text-[#f1f1f1] cursor-pointer hover:text-red-600"
+							name="heart-outline"
+						></ion-icon>
+						<div
+							class="card-content absolute text-white left-0 -bottom-full px-[1rem] backdrop-blur duration-[0.5s] ease-[cubic-bezier(0.075, 0.82, 0.165, 1)]"
+						>
+							<h3 class="font-semibold text-[25px] text-white">Health Care</h3>
+							<div class="text-yellow-300 text-[14px]">
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-half-sharp"></ion-icon>
+							</div>
+							<p class="font-extralight text-[14px] text-[#ddd] mt-[7px]"></p>
+						</div>
+					</div>
+					<div
+						class="card p-[10px] w-[300px] h-[200px] relative cursor-pointer overflow-hidden rounded-xl"
+					>
+						<img
+							class="card-img absolute left-0 top-0 duration-[2000ms] w-full h-full object-cover"
+							src="https://img.freepik.com/premium-vector/male-cute-cartoon-profile-character_539226-20.jpg?w=360"
+							alt=""
+						/>
+						<ion-icon
+							class="card-fav absolute duration-[1s] right-[-100%] top-[1rem] text-[1.8rem] text-[#f1f1f1] cursor-pointer hover:text-red-600"
+							name="heart-outline"
+						></ion-icon>
+						<div
+							class="card-content absolute text-white left-0 -bottom-full px-[1rem] backdrop-blur duration-[0.5s] ease-[cubic-bezier(0.075, 0.82, 0.165, 1)]"
+						>
+							<h3 class="font-semibold text-[25px] text-white">Health Care</h3>
+							<div class="text-yellow-300 text-[14px]">
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-half-sharp"></ion-icon>
+							</div>
+							<p class="font-extralight text-[14px] text-[#ddd] mt-[7px]"></p>
+						</div>
+					</div>
+					<div
+						class="card p-[10px] w-[300px] h-[200px] relative cursor-pointer overflow-hidden rounded-xl"
+					>
+						<img
+							class="card-img absolute left-0 top-0 duration-[2000ms] w-full h-full object-cover"
+							src="https://img.freepik.com/premium-vector/male-cute-cartoon-profile-character_539226-20.jpg?w=360"
+							alt=""
+						/>
+						<ion-icon
+							class="card-fav absolute duration-[1s] right-[-100%] top-[1rem] text-[1.8rem] text-[#f1f1f1] cursor-pointer hover:text-red-600"
+							name="heart-outline"
+						></ion-icon>
+						<div
+							class="card-content absolute text-white left-0 -bottom-full px-[1rem] backdrop-blur duration-[0.5s] ease-[cubic-bezier(0.075, 0.82, 0.165, 1)]"
+						>
+							<h3 class="font-semibold text-[25px] text-white">Health Care</h3>
+							<div class="text-yellow-300 text-[14px]">
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-sharp"></ion-icon>
+								<ion-icon name="star-half-sharp"></ion-icon>
+							</div>
+							<p class="font-extralight text-[14px] text-[#ddd] mt-[7px]"></p>
+						</div>
+					</div>
+				</section>
+				<div class="flex justify-center items-center">
+					<button
+						class="font-semibold text-[16px] text-fuchsia-50 bg-[#ff4c5f] hover:text-[#151515] hover:bg-[#ffd85e] py-2 px-[30px] mt-8 rounded-full duration-500 ease-linear"
+					>
+						Load More
+					</button>
+				</div>
+			</section>
+			<!-- ------------------------------- skills -------------------------------- -->
+			<section class="py-[3.1875em]  mx-[8em] sm:mx-3 md:m-3">
+				<section
+					class="flex sm:flex-wrap justify-center items-center gap-[12em] sm:gap-[3em] mb-[4em]"
+					data-aos="zoom-in-up"
+				>
+					<div class="text-slate-400 text-[50px] hover:text-[#ff4c61]">
+						<ion-icon name="logo-html5"></ion-icon>
+					</div>
+					<div class="text-slate-400 text-[50px] hover:text-[#0ea5e9]">
+						<ion-icon name="logo-css3"></ion-icon>
+					</div>
+					<div class="text-slate-400 text-[50px] hover:text-[#f8d74c]">
+						<ion-icon name="logo-nodejs"></ion-icon>
+					</div>
+					<div>
+						<img src="/imgs/icons8-bootstrap-50.png" alt="" />
+					</div>
+				</section>
+
+				<section
+					class="flex sm:flex-wrap justify-center items-center gap-[12em] sm:gap-[3em]"
+					data-aos="zoom-in-up"
+				>
+					<div class="text-slate-400 text-[50px] hover:text-[#5958e2]">
+						<ion-icon name="logo-react"></ion-icon>
+					</div>
+					<div>
+						<img src="/imgs/icons8-tailwindcss-50.png" alt="" />
+					</div>
+					<div class="text-slate-400 text-[50px] hover:text-black">
+						<ion-icon name="logo-github"></ion-icon>
+					</div>
+					<div class="text-slate-400 text-[50px] hover:text-black">
+						<ion-icon name="logo-wordpress"></ion-icon>
+					</div>
+				</section>
+			</section>
+			<!-- ------------------------------- contact ------------------------------- -->
+			<section class="py-[7.1875em] sm:py-[4.1875em] mx-[8em] sm:m-3 md:m-3">
+				<h2 class="font-bold text-[2rem] text-[#151515] mb-[1.3em] sm:text-center">
+					Get In Touch
+				</h2>
+				<section class="flex sm:flex-col md:flex-col gap-6">
+					<div class="sm:text-center">
+						<h4 class="font-bold text-[20px] mb-2">Let's talk business</h4>
+						<p class="font-thin text-[16px]">
+							Email me at
+							<span class="text-red-600">chukwuebukajosh8@gmail.com</span>
+						</p>
+					</div>
+					<section class="w-[80%] sm:w-full">
+						<div class="mb-3 flex justify-center items-center">
+							<input
+								class="form py-[10px] px-[30px] rounded-full text-[17px] w-[70%] sm:w-full outline-none border-none mr-6"
+								type="text"
+								placeholder="Your name"
+							/>
+							<input
+								class="form py-[10px] px-[30px] rounded-full text-[17px] w-[70%] sm:w-full outline-none border-none"
+								type="email"
+								placeholder="Email address"
+							/>
+						</div>
+						<div>
+							<input
+								class="form py-[10px] px-[30px] rounded-full text-[17px] w-full outline-none border-none mb-3"
+								type="text"
+								placeholder="Subject"
+							/>
+							<textarea
+								class="block form py-[10px] px-[30px] rounded-xl text-[17px] w-full outline-none border-none mb-3"
+								name="Message"
+								id=""
+								cols="30"
+								rows="4"
+								placeholder="Message"
+							></textarea>
+							<div>
+								<button
+									class="btn1 font-semibold text-[16px] text-fuchsia-50 bg-[#ff4c5f] hover:text-[#151515] hover:bg-[#ffd85e] py-2 px-[30px] rounded-full duration-500 ease-linear"
+								>
+									send message
+								</button>
+							</div>
+						</div>
+					</section>
+				</section>
+			</section>
+		</main>
+		<footer>
+			<section class="bg-[#343353] py-[4em] text-center text-cyan-50">
+				<div class="flex justify-center items-center text-white gap-4 mb-4">
+					<div>
+						<a
+							class="text-[25px] text-cyan-50 hover:text-[#ffd85e] duration-200"
+							href=""
+							><ion-icon name="logo-instagram"></ion-icon
+						></a>
+					</div>
+					<div>
+						<a class="text-[25px] hover:text-[#ffd85e] duration-200" href=""
+							><ion-icon name="logo-twitter"></ion-icon
+						></a>
+					</div>
+					<div>
+						<a class="text-[25px] hover:text-[#ffd85e] duration-200" href=""
+							><ion-icon name="logo-linkedin"></ion-icon
+						></a>
+					</div>
+					<div>
+						<a class="text-[25px] hover:text-[#ffd85e] duration-200" href=""
+							><ion-icon name="logo-pinterest"></ion-icon
+						></a>
+					</div>
+					<div>
+						<a class="text-[25px] hover:text-[#ffd85e] duration-200" href=""
+							><ion-icon name="logo-facebook"></ion-icon
+						></a>
+					</div>
+					<div>
+						<a class="text-[25px] hover:text-[#ffd85e] duration-200" href=""
+							><ion-icon name="logo-github"></ion-icon
+						></a>
+					</div>
+				</div>
+				<h3>© <span class="date"></span> Designed and Coded by Joshua.</h3>
+				<div
+					class="top h-[50px] w-[50px] rounded-full bg-[#2a2a46] flex justify-center items-center fixed top-[85%] left-[100%] right-[0] duration-200"
+				>
+					<a class="text-white text-[25px]" href="#home"
+						><ion-icon name="arrow-up-outline"></ion-icon
+					></a>
+				</div>
+			</section>
+		</footer>
+
+		<script>
+			AOS.init({
+				duration: 900,
+			});
+		</script>
+	</body>
+</html>
